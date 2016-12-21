@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">News Feed</string>
+    <string name="drawer_open"></string>
+    <string name="drawer_close"></string>
+    <string name="dhaka_jela"></string>
+    <string name="title_activity_maps">Map</string>
+</resources>

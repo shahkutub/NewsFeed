@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0D7CE4"
+            >
+
+                <ImageView
+                    android:id="@+id/imgBac"
+                    android:layout_width="wrap_content"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/back_white_new"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/dim5"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tvToolBarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="News Details"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/dim15"
+                    />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/lay_bg"
+            android:layout_height="@dimen/dim200">
+
+                <ImageView
+                    android:id="@+id/imgDefault"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim200"
+                    android:src="@drawable/icturo"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    ></ImageView>
+
+                <com.teamalx.Utils.TouchImageView
+                    android:id="@+id/imgDetail"
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_height="@dimen/dim200"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imgDefault"
+                    android:layout_toEndOf="@+id/imgDefault" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#0D7CE4"
+            android:layout_marginBottom="2dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dim5"
+            >
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#7AA410"
+                    android:gravity="right"
+                    android:textSize="12sp"
+
+                    />
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#0D7CE4"
+                    android:gravity="left"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/tvDate"
+                    />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#0D7CE4"
+            android:layout_marginTop="2dp"
+            />
+
+        <TextView
+            android:id="@+id/tvDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:gravity="left"
+            android:textSize="15sp"
+            android:padding="@dimen/dim10"
+            />
+
+</LinearLayout>

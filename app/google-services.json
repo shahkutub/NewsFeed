@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "829450631434",
+    "firebase_url": "https://icteuro-apps.firebaseio.com",
+    "project_id": "icteuro-apps",
+    "storage_bucket": "icteuro-apps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829450631434:android:a27d9822ffe94036",
+        "android_client_info": {
+          "package_name": "com.icteuro.teamalx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829450631434-itcugso409vo1tl1e9os6nneq8kl3jbk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvxstJLGkomhT4BCUIQWydlPQ4LaXWTV0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

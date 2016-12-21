@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+    <dimen name="dim5">8dp</dimen>
+    <dimen name="dim8">12dp</dimen>
+    <dimen name="dim10">15dp</dimen>
+    <dimen name="dim12">18dp</dimen>
+    <dimen name="dim15">23dp</dimen>
+    <dimen name="dim20">30dp</dimen>
+    <dimen name="dim30">45dp</dimen>
+    <dimen name="dim50">75dp</dimen>
+    <dimen name="dim150">225dp</dimen>
+    <dimen name="dim200">300dp</dimen>
+    <dimen name="dim250">375dp</dimen>
+    <dimen name="dim350">525dp</dimen>
+    <dimen name="splash_txt">28sp</dimen>
+    <dimen name="alert_width">400dp</dimen>
+    <dimen name="dim100">130dp</dimen>
+    <dimen name="dim35">50dp</dimen>
+    <dimen name="dim170">190dp</dimen>
+    <dimen name="dim70">90dp</dimen>
+</resources>
