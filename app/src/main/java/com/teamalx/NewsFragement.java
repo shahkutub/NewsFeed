@@ -16,6 +16,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
@@ -48,6 +50,7 @@ public class NewsFragement extends BaseFragment {
     private ListView listUjelaOfficer;
     SwipeRefreshLayout pullToRefresh;
     private int limit = 8;
+    int position;
     HistoryAdapter historyAdapter;
     String data,id;
     private ProgressBar prog;
@@ -91,7 +94,24 @@ public class NewsFragement extends BaseFragment {
 
         }else {
             requestOrderHistory(AllURL.newsUrls(String.valueOf(limit)));
+
+//            Animation anim = AnimationUtils.loadAnimation(
+//                    con, android.R.anim.slide_out_right
+//            );
+//            anim.setDuration(500);
+//            listUjelaOfficer.getChildAt(position).startAnimation(anim );
+//
+//            new Handler().postDelayed(new Runnable() {
+//
+//                public void run() {
+//
+//                    historyAdapter.notifyDataSetChanged();
+//
+//                }
+//
+//            }, anim.getDuration());
         }
+
 
 
 
@@ -195,14 +215,19 @@ public class NewsFragement extends BaseFragment {
 
         @TargetApi(Build.VERSION_CODES.HONEYCOMB)
         @Override
-        public View getView(final int position, View convertView, ViewGroup parent) {
+        public View getView(int position, View convertView, ViewGroup parent) {
 
+            position = position;
             View v = convertView;
 
             if (v == null) {
                 final LayoutInflater vi = (LayoutInflater) context
                         .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 v = vi.inflate(R.layout.raw_upjela_nirbahi, null);
+
+
+
+
             }
 
             if( position<posts.size()){
@@ -235,6 +260,10 @@ public class NewsFragement extends BaseFragment {
 
                     }
                 });
+
+                Animation animation = AnimationUtils.loadAnimation(getActivity(), R.anim.anim);
+                v.startAnimation(animation);
+
 
 
             }

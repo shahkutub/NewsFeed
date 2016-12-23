@@ -3,6 +3,7 @@ package com.teamalx;
 import android.annotation.TargetApi;
 import android.app.DialogFragment;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -39,7 +40,7 @@ public class DetailsDialogFragment extends DialogFragment {
     private ImageView imgBac,imgDefault;
     private TouchImageView imgDetail;
     private WebView webDjela;
-    TextView tvTitle,tvDetails,tvDate;
+    TextView tvTitle,tvDetails,tvDate,tvDetailsTitle;
 
     @Nullable
     @Override
@@ -64,7 +65,13 @@ public class DetailsDialogFragment extends DialogFragment {
         tvTitle = (TextView)view.findViewById(R.id.tvTitle);
         tvDetails = (TextView)view.findViewById(R.id.tvDetails);
         tvDate = (TextView)view.findViewById(R.id.tvDate);
+        tvDetailsTitle = (TextView)view.findViewById(R.id.tvDetailsTitle);
 
+        final Typeface face_bold = Typeface.createFromAsset(getActivity().getApplication().getAssets(), "fonts/SolaimanLipi_Bold.ttf");
+        tvTitle.setTypeface(face_bold);
+        tvDetails.setTypeface(face_bold);
+        tvDate.setTypeface(face_bold);
+        tvDetailsTitle.setTypeface(face_bold);
 //        tvDhakaJela.setMovementMethod(new ScrollingMovementMethod());
 
         imgBac.setOnClickListener(new View.OnClickListener() {
