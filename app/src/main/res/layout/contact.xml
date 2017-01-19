@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F2F2F2"
-    >
+    android:background="#F2F2F2">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -75,7 +76,12 @@
         android:layout_marginTop="@dimen/dim20"
         android:orientation="horizontal">
 
-
+        <com.teamalx.Utils.RippleView
+            android:id="@+id/rect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ripple:rv_type="rectangle"
+            ripple:rv_zoom="true">
     <TextView
         android:id="@+id/tvSubmit"
         android:layout_width="wrap_content"
@@ -88,9 +94,10 @@
         android:paddingLeft="@dimen/dim20"
         android:paddingTop="@dimen/dim10"
         android:paddingBottom="@dimen/dim10"
-        android:background="@drawable/submit_bg"
-
+        android:background="@color/homTop"
         />
+        </com.teamalx.Utils.RippleView>
+
     </LinearLayout>
 
 </LinearLayout>
